@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sisay Negash Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <style>
+      /* Style for the container */
+      .logo {
+          width: 100px; /* Adjust the width as needed */
+          height: 100px; /* Adjust the height as needed */
+          overflow: hidden;
+          border-radius: 25%; /* Makes the container round */
+      }
+  
+      /* Style for the image */
+      .rounded-image {
+          width: 100%;
+          height: 100%;
+          object-fit: cover; /* Ensures the image covers the entire container */
+          border-radius: 50%; /* Makes the image round */
+      }
+  </style>
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">
+        <a href="#">
+          <img class="rounded-image" src="./assets/s-shape.png" alt="Logo" title="Sisay Negash Mengistu,Call Me Daboss">
+      </a>
+      </div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#certificate">Certificate</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Sisay Negash Mengistu</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#certificate"onclick="toggleMenu()">certificate</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/cicled-sisay-good.png" alt="Sisay Negash profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Sisay Negash </h1>
+        <p class="section__text__p2">Software Engineer and Machine Learning Engineer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/sisay-cv.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/sisaynegashmengistu'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/SisayNegashMengistu'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/sis-dire-office.jpg"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>4+ years <br />Frontend & Backend Development</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>B.Sc.In Software Engineering<br />M.Sc. In Software Engineering</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+                I hold a BSc and MSc in Software Engineering from Bahir Dar University, Ethiopia. 
+                Currently, I am a lecturer at Dire Dawa University in Ethiopia. 
+                In addition to my academic role, I am a Full Stack Developer and Machine Learning Engineer with experience in Django and the MERN stack.
+                I excel in software testing, teamwork, and the software development life cycle. 
+                Additionally, I am proficient in Design Science Research Methodology.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+
+    <!-- SKILL AND  EXPRIENCE -->
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frontend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>React</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Vue JS</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Angular</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>jQuery</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Bootstrap</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Backend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Django</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Node JS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Flask </h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>MERN (full stack) </h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- END OF SKILL AND EXPRIENCE -->
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+
+    <!-- PROJECT SECTION -->
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+
+            <div class="article-container">
+              <img
+                src="./assets/roboic-arm.jpg"
+                alt="Project 1"
+                class="project-img"/>
+            </div>
+            
+            <h2 class="experience-sub-title project-title">Robotic Arm </h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/SisayNegashMengistu/Wireless-robotic-arm-for-Picking-and-placing-objects'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <!-- Diabetes prediction system using ML -->
+          
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/diabetes_prediction.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title"> Diabetes Prediction system Using Machine Learning enhanced by Web Application</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/SisayNegashMengistu/Diabetes_Prediction_system_using_ML'">
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='#'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/XAI-applu.jpg"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            
+            <h2 class="experience-sub-title project-title">Enhance Fetal Abnormalies Detection By XAI and Prototypes</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='#'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='#'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <section id="certificate">
+      <h1> Certificate</h1>
+      <div class="contact-info-upper-container">
+       <div class="contact-info-container">
+        <div id="certificate">
+          <div class="gallery">
+            <div class="img-wrapper" data-description="I am proud to showcase my certificate awarded by Bahir Dar University, recognizing my exceptional performance during organizational trips. This certificate stands as a testament to my dedication, adaptability, and unwavering commitment to excellence in every task entrusted to me. Through these trips, I not only represented our organization with professionalism but also demonstrated my ability to navigate diverse environments and challenges effectively. This recognition from Bahir Dar University underscores the value of my contributions and serves as a reminder of the enriching experiences gained while representing our institution. It symbolizes not just an accomplishment, but a journey marked by growth, learning, and the relentless pursuit of success">
+                <img src="assets/certificate/21.jpeg" alt="Certificate 21">
+            </div>
+            <div class="img-wrapper" data-description="As a software developer, I had the honor of representing the Faculty of Computing at Bahir Dar University during the Software Development Fair hosted by the University's Office of University-Community Service and Engagement, facilitated by the University's Leverage and Community Service Office since 2018. This certificate, bestowed upon me by the Faculty of Computing, serves as a testament to my role as one of the esteemed representatives of the faculty at this prestigious event. It symbolizes not only my technical expertise but also my dedication to advancing the field of software development through collaboration, innovation, and community engagement. Being recognized by Bahir Dar University underscores the value of my contributions and reaffirms my commitment to excellence in software development and beyond">
+                <img src="assets/certificate/22.jpeg" alt="Certificate 22">
+            </div>
+            <div class="img-wrapper" data-description="I am immensely proud to showcase this certificate, awarded to me by the University Leverage and Community Service Office, in recognition of my outstanding representation of the Faculty during the final year project exhibition hosted by Bahir Dar University. This certificate serves as a testament to my dedication and innovative contributions to our academic community. Additionally, my role extended beyond Bahir Dar University, as I had the privilege of representing our esteemed institution at Addis Ababa University's exhibition. This dual acknowledgment underscores the significance of my efforts in fostering academic collaboration and knowledge exchange. It is a reflection of my commitment to excellence and my passion for advancing the field of software Engineering.">
+                <img src="assets/certificate/23.jpeg" alt="Certificate 23">
+            </div>
+            <div class="img-wrapper" data-description="I am delighted to present this certificate awarded by the Faculty of Computing, recognizing our exceptional achievement in the final year project competition. Alongside my two friends, we developed a groundbreaking robotic arm capable of picking and placing objects with precision and efficiency. This innovative project not only showcased our technical skills but also our collaborative spirit and dedication to pushing the boundaries of technology. Winning this award fills me with immense pride and serves as a testament to the countless hours of hard work and innovation invested in the development of our robotic arm. It is a reminder of the power of teamwork and perseverance in achieving remarkable feats in the field of computing.">
+                <img src="assets/certificate/24.jpeg" alt="Certificate 34">
+            </div>
+            <div class="img-wrapper" data-description="I am honored to showcase this certificate awarded by Amhara Metal industy and Machine Technology Developement, my internship placement, in recognition of my contribution to their operations. During my internship, I had the privilege of developing a robust Property Management System tailored to their specific needs. This system streamlined their processes, enhanced data management efficiency, and facilitated better decision-making. Through meticulous attention to detail and innovative problem-solving, I ensured that the Property Management System met the organization's requirements and exceeded their expectations. Receiving this certificate serves as validation of my dedication, professionalism, and ability to deliver tangible solutions that make a meaningful impact. It represents not only the successful completion of my internship but also the beginning of a promising journey in the field of software development.">
+                <img src="assets/certificate/25.jpeg" alt="Certificate 25">
+            </div>
+        </div>
+        <div id="description-box"></div>
+      </div>
+       </div>
+      </div>
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:examplemail@gmail.com">bdu1500286@bdu.edu.et</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/sisaynegashmengistu/">LinkedIn</a></p>
+        </div>
+        <div class="contact-info-container">
+            <img
+              src="./assets/phone.png"
+              alt="LinkedIn icon"
+              class="icon contact-icon"
+            />
+            <p><a href="#">+251-927-64-0751</a></p>
+          </div>
+          <div class="contact-info-container">
+            <img
+              src="./assets/twitter.png"
+              alt="LinkedIn icon"
+              class="icon contact-icon"
+            />
+            <p><a href="https://x.com/sisaynegashm">@sisaynegashm</a></p>
+          </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#certificate">Certificate</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2024 Sisay Negash. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
